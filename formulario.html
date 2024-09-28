@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0;
+            }
+
+            form {
+                width: 400px;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px
+                    rgba(0, 0, 0, 0.1);
+            }
+
+            fieldset {
+                border: 1px solid black;
+                padding: 10px;
+                margin: 0;
+            }
+
+            legend {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea,
+            input[type="date"] {
+                width: calc(100% - 20px);
+                padding: 8px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            input[type="radio"] {
+                margin-left: 20px;
+            }
+
+            input[type="completar reserva"] {
+                padding: 10px 20px;
+
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>
+                    Formulario de reserva de viaje
+                </legend>
+                <p>
+                <sub><b>* significa campo obligatorio</b></sub>
+            </p>
+                <label
+                    >Nombre completo*:</label
+                >
+                <input type="text" name="name" />
+                <label>Email*:</label>
+                <input
+                    type="email"
+                    name="email"
+                />
+                <form action="#">
+                    <label for="lang">Seleccione el paquete vacacional*:</label>
+                    <select name="paquetes" id="lang">
+                      <option value="javascript">Goa</option>
+                      <option value="php">Cachemira</option>
+                      <option value="java">Rajastán</option>
+
+                    </select>
+                 
+              </form>
+
+              <p></p>
+
+              <label
+              >Fecha de llegada</label
+          >
+          <input type="date" name="dob" />
+
+              <p></p>
+
+              <label
+              >Número de personas*:</label
+          >
+          <input type="text" name="numero" />
+
+          <label
+          >¿Qué extras quieres reservar?*</label
+      >
+
+      <p></p>
+
+          Facturación<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+
+          <p></p>
+
+        Pensión completa<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+
+        <p></p>
+
+        Visitas guiadas<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+
+        <p>
+        
+            <label
+            >Cupón de descuento:</label
+        >
+        <input type="text" name="cupon" />
+
+                <label>Términos y condiciones*</label>
+                <input
+                    type="radio"
+                    name="terminos"
+                    value="Acepto"
+                />Acepto
+                <input
+                    type="radio"
+                    name="terminos"
+                    value="no acepto"
+                />No acepto
+                
+            </p>
+                <input
+                    type="button"
+                    value= "Completar reserva"
+                />
+            </fieldset>
+        </form>
+    </body>
+</html>

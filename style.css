@@ -1,0 +1,27 @@
+h1 {
+    padding: 10px;
+    background-color: green; 
+    color: white;
+}
+
+.azul {
+    color: blue;
+}
+
+.imagen {
+    width: 25%;
+    border-radius: 50%;
+}
+h3 {
+    color: red;
+}
+
+.enlace {
+    color: green;
+    text-decoration: underline;
+}
+
+.video {
+    width: 327px;
+    height: 580px;
+}
